@@ -1,12 +1,13 @@
-.wrapper{
-	min-width: 1024px;
-}
-
 header{
 	background-color: #ffffff;
 	border-style: solid;
 	border-color: #eee;
 	border-width: 0px 0px 1px 0px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	overflow: hidden;
+	z-index: 1;
 }
 
 h1{
@@ -69,6 +70,8 @@ p{
 
 body {
 	background-image: url("../images/soft_wallpaper.png");
+	z-index: 2;
+	padding-top: 100px;
 }
 
 a:link{
@@ -106,6 +109,7 @@ html, body{
 .wrapper{
 	min-height: 100%;
 	margin-bottom: -56px;
+	min-width: 1024px;
 }
 
 .footer,
@@ -135,7 +139,7 @@ html, body{
 	background-color: #ffffff;
 	border-color: #dddddd;
 	float: left;
-	width: 240px;
+	width: 30%;
 	height: 140px;
 	margin: 30px 30px 10px 10px;
 	padding: 15px;
@@ -149,7 +153,7 @@ html, body{
 }
 
 #aboutmepicbox{
-	width: 620px;
+	width: 50%;
 	float: left;
 	background-color: #ffffff;
 	padding: 15px;
@@ -170,6 +174,7 @@ html, body{
 
 .portfoliolinks{
 	min-width: 620px;
+	width: 55%;
 	float: left;
 	background-color: #ffffff;
 	padding: 15px;
@@ -238,7 +243,7 @@ html, body{
 }
 
 .contactsection{
-	width: 620px;
+	width: 50%;
 	float: left;
 	height: 520px;
 	background-color: #ffffff;
@@ -272,7 +277,7 @@ input[type=submit] {
 }
 
 textarea{
-	width: 95%;
+	width: 98%;
 	margin: 10px 2px 10px 2px;
 	border: 1px solid lightgray;
 }
@@ -288,30 +293,31 @@ textarea{
 	clear: both;
 }
 
-@media (max-width:980px){
+@media screen and (max-width:980px){
 	
 	.wrapper{
-		width:980px;
+		min-width: 0px;
+		max-width:950px;
 	}
 	
 	#aboutmepicbox{
-	width: 50%;
+	width: 45%;
 	}
 
 	.connectwithme{
-	width: 30%;
+	width: 32%;
 	}
 
 	#biopic{
 		float:none;
+		text-align:center;
 		max-width: 250px;
-		width:80%;
-		margin-left: 70px;
+		width:75%;
 	}
 	
 	.portfoliolinks{
 		min-width: 0px;
-		width: 40%;
+		width: 45%;
 	}
 	
 	.portpic{
@@ -334,7 +340,6 @@ textarea{
 		width: 95%
 	}
 
-	
 	#imagetwo{
 		float:none;
 		margin: 10px;
@@ -374,26 +379,27 @@ textarea{
 	
 	.contactsection{
 		min-width: 0px;
-		width: 50%;
+		width: 45%;
 	}
 
 }	
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
 	
 	.wrapper{
-		width:768px;
+		min-width: 0px;
+		max-width:698px;
 	}
 	
 	#aboutmepicbox{
 		max-width: none;
-		width: 100%;
+		width: 80%;
 		margin: 20px 20px 20px 20px;
 	}
 
 	.connectwithme{
 		max-width:none;
-		width: 100%;
+		width: 80%;
 		margin:20px 20px 20px 20px;
 	}
 
@@ -404,7 +410,7 @@ textarea{
 	}
 	
 	.portfoliolinks{
-		width: 100%;
+		width: 80%;
 	}
 	
 	.portpic{
@@ -414,7 +420,7 @@ textarea{
 	}
 	
 	.labs{
-		width: 100%;
+		width: 97%;
 		height: 20px;
 		padding-top: 15px;
 	}
@@ -450,20 +456,21 @@ textarea{
 		}
 		
 	.contactsection{
-		width: 100%;
+		width: 80%;
 	}
 
 }
 
-@media (max-width:640px){
+@media screen and (max-width:640px){
 	
 	.wrapper{
-		width:640px;
+		min-width: 0px;
+		max-width:570px;
 	}
 	
 	#biopic{
 		float:none;
-		width:60%;
+		width:50%;
 		text-align: center;
 		margin-left: 70px;
 	}
@@ -491,6 +498,10 @@ textarea{
 		margin: 25px;
 	}
 	
+	.labs{
+		width: 100%;
+	}
+	
 	#imageone{
 		float:left;
 		width: 100%;
@@ -515,6 +526,16 @@ textarea{
 		float:left;
 		width:100%;
 		}
+		
+	
+	.navigation{
+    position: relative;
+    top: auto;
+    }
+    
+    body{
+    	padding-top: 0px;
+    }
 
 }
 
